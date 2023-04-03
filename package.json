@@ -9,7 +9,7 @@
     "test": "ng test",
     "tauri": "tauri",
     "dev": "tauri dev",
-    "bundle": "tauri:build"
+    "bundle": "tauri build"
   },
   "private": true,
   "dependencies": {
