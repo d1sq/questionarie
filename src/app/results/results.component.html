@@ -1,0 +1,19 @@
+<nz-result
+  nzStatus="success"
+  nzTitle="Вы успешно завершили тест"
+  [nzSubTitle]="'Количество набранных баллов ' + score + '/100'"
+>
+  <div nz-result-extra>
+    <button nz-button (click)="goBack()">Try Again</button>
+  </div>
+</nz-result>
+<div class="question-card" *ngFor="let result of results; let i = index">
+  <nz-card>
+    <nz-card>Вопрос №{{ i + 1 }}</nz-card>
+    <nz-card>
+      <div class="question">{{ result.question }}</div>
+      <div>Ответ: {{ result.answer.value }}</div>
+      <div>Комментарий: {{ getComment(result.id) }}</div>
+    </nz-card>
+  </nz-card>
+</div>
