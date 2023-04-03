@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "tauri": "tauri",
-    "dev": "tauri dev"
+    "dev": "tauri dev",
+    "bundle": "tauri:build"
   },
   "private": true,
   "dependencies": {
